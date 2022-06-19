@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "http": "^0.0.1-security"
+  },
+  "name": "learning-nodejs",
+  "version": "1.0.0",
+  "main": "creating-server.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codingXpert/Learning-NodeJs.git"
+  },
+  "author": "xyz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codingXpert/Learning-NodeJs/issues"
+  },
+  "homepage": "https://github.com/codingXpert/Learning-NodeJs#readme",
+  "description": ""
+}
