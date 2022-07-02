@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile page</title>
-</head>
-<body>
+  </head>
+  <body>
+
     <h1>Profile Page</h1>
     <h3>Welcome <%= user.name %></h3>
     <h3>Email:<%= user.email %></h3>
     <h3>City:<%= user.city %></h3>
-</body>
+    <h3>Skills:<%= user.skills %></h3>
+
+    <!-- Appliying forEach loop on skills -->
+    <ul>
+      <% user.skills.forEach((item) => { %>
+      <li><%= item %></li>
+
+      <% }) %>
+    </ul>
+
+  </body>
 </html>
