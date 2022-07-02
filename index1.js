@@ -17,7 +17,7 @@ app.get('/profile' , (req , res) => {
          email:'anil@gmail.com',
          city:'Noida'
     }
-    res.render('profile');
+    res.render('profile' , {user});
 });
 
 
