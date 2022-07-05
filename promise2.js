@@ -15,6 +15,11 @@ myPromise
         console.log('Success');
        });
 
+ myPromise
+       .then(() =>{
+        console.log('Twice Success');
+       });
+
 myPromise
        .catch(() => {
         console.log('Some error has occured');
