@@ -6,6 +6,7 @@
     "http": "^0.0.1-security",
     "i": "^0.3.7",
     "nodemon": "^2.0.18",
+    "react-toastify": "^9.0.5",
     "to": "^0.2.9",
     "update": "^0.7.4"
   },
