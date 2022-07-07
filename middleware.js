@@ -26,7 +26,7 @@ app.get('/' , (req,res) => {
 
 app.get('/user' , (req , res) => {
     res.send('<h1>Welcome to users page</h1>')
-})
+});
 
 app.listen(8000 , (err) => {
     if(!err){
