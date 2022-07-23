@@ -18,8 +18,18 @@ app.get('/' , async (req , res) => {
 //post api
 app.post('/' , async (req , res) => {
     let data = await dbConnect();
-    data = await data.insert(req.body);
-    res.send(data);
+    let result = await data.insert(req.body);
+    res.send(result);
 });
+
+//put api
+app.put('/:xyz'  , async(req ,res)=>{
+let data = await dbConnect();
+let result = data.updateOne(
+    {name:req.params.xyz} , 
+    {$set:req.body}
+)
+res.send({result:"update"})
+}) 
 
 app.listen(8000); 
