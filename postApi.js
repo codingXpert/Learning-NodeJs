@@ -1,5 +1,6 @@
 const express = require('express');
 const dbConnect = require('./dbConnFile');
+const mongodb=require('mongodb');
 const app = express();
 
 //telling the node that we are using json data formate
@@ -30,6 +31,14 @@ let result = data.updateOne(
     {$set:req.body}
 )
 res.send({result:"update"})
-}) 
+}) ;
+
+//delete  API
+app.delete("/:id" , async(req , res)=>{
+    console.log(req.params.id);
+    const data = await dbConnect();
+    const result = await data.deleteOne({_id:new mongodb.ObjectId(req.params.id)});
+    res.send(result);
+})
 
 app.listen(8000); 
