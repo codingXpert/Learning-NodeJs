@@ -6,6 +6,7 @@
     "http": "^0.0.1-security",
     "i": "^0.3.7",
     "mongodb": "^4.7.0",
+    "mongoose": "^6.2.9",
     "nodemon": "^2.0.18",
     "react-toastify": "^9.0.5",
     "to": "^0.2.9",
